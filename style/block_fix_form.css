@@ -65,13 +65,19 @@
 
     background-color: #4200FF;
 }
-.active_clr{
-    color: #e70606;
+
+.active_clr {
+    color: #4200FF;
 }
+
 .active_inp {
     border: 2px solid #4200FF;
 }
 
-.deactive {
-    border: 2px solid #912207;
+.deactive_clr {
+    color: #e70606;
+}
+
+.deactive_inp {
+    border: 2px solid #e70606;
 }
