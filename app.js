@@ -9,6 +9,10 @@ inp.forEach(inp_v => {
     }
 });
 
+let btn_save = document.querySelector(".btn_form_save")
+btn_save.onclick = () => {
+    btn_save.style.background = "red"
+}
     // inp_v.onblur = () => {
     //     inp_v.forEach(deactive => {
     //         deactive.classList.remove("deactive")
