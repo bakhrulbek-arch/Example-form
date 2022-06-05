@@ -4,20 +4,21 @@ let txt_bottom = document.querySelectorAll(".title_obj_inp_bottom")
 let disp_blc = document.querySelectorAll(".display_none")
 inp.forEach(inp_v => {
     inp_v.onfocus = () => {
-        if (inp_v.value.length == 0) {
-            need.forEach(item => {
+        if (inp_v.value.length < 0) {
+                        need.forEach(item => {
                 item.classList.add("active_clr")
             })
-
             inp_v.classList.add("active_inp")
+        
         } else {
             need.forEach(item => {
                 item.classList.add("deactive_clr")
             })
-            disp_blc.forEach(dsp_blc => {
-                dsp_blc.classList.add("display_blc")
-            })
-            inp_v.classList.add("deactive_inp")
+            
+                disp_blc.forEach(dsp_blc => {
+                    dsp_blc.classList.add("display_blc")
+                })
+           inp_v.classList.add("deactive_inp")
         }
     }
 });
@@ -52,6 +53,7 @@ inp.forEach(inp_v => {
             })
             inp_v.classList.add("deactive_inp")
         }
+    
     }
 });
 let inp_not = document.querySelectorAll(".set_inp_not")
@@ -67,3 +69,9 @@ let btn_save = document.querySelector(".btn_form_save")
 btn_save.onclick = () => {
     btn_save.style.background = "#e70606"
 }
+
+// let age = document.querySelector(".age")
+// inp[6].forEach(inp_v => {
+//     if(inp.value)
+    
+// });    
